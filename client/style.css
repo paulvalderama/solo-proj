@@ -1,0 +1,75 @@
+/* styling the body, classes, IDs */
+
+body{
+    margin-top: 0; 
+    margin-left: 0; 
+    margin-right: 0;
+    margin-bottom:10px;     
+    background-color: white;
+
+}
+/* head{
+    text-align: center;
+    font-size: 25px; 
+    margin-bottom: 50px; 
+} */
+.header{
+    background-color: black;
+    margin-top: 0;
+    margin-bottom: 10; 
+}    
+.btn{
+    position: left;
+    width: 80%;
+    padding: 0%;
+    justify-content: space-between;
+    margin-left: 10px; 
+}
+
+.btns{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.links{
+    display: flex;
+    font-size: 15px;
+    margin-left: 10px; 
+    color: white; 
+    /* justify-content: space-between;  */
+} 
+.gt{
+    position: left;
+    justify-content: space-between;
+    margin-left: 10px;
+    color: white;
+}  
+.container{
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 3px black;
+    background-color: white;
+    padding: 40px 40px; 
+    max-width: 400px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px; 
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+
+img{
+    display: flex;
+    max-width: 150px; 
+    height: 150px;
+    flex-wrap: flex;
+
+}
+
+#storeItemContainer{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between; 
+
+}
