@@ -1,22 +1,22 @@
 /* styling the body, classes, IDs */
 
-body{
-    margin-top: 0; 
-    margin-left: 0; 
-    margin-right: 0;
-    margin-bottom:10px;     
-    background-color: white;
-
-}
-/* head{
-    text-align: center;
-    font-size: 25px; 
-    margin-bottom: 50px; 
-} */
 .header{
     background-color: black;
     margin-top: 0;
-    margin-bottom: 10; 
+    margin-bottom: 20; 
+    padding: 10px; 
+    flex-direction: column; 
+
+    box-shadow: 1px 1px 3px 3px black;
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
 }    
 .btn{
     position: left;
@@ -28,48 +28,77 @@ body{
 
 .btns{
     display: flex;
-    /* justify-content: space-between; */
 }
-.links{
+
+.cart{
     display: flex;
-    font-size: 15px;
+    font-size: 20px;
     margin-left: 10px; 
-    color: white; 
-    /* justify-content: space-between;  */
+    color: gray;
+    flex-direction: column-reverse; 
 } 
-.gt{
+.home{
     position: left;
     justify-content: space-between;
     margin-left: 10px;
-    color: white;
+    color: gray;
+    font-size: 20px; 
 }  
+
+.product{
+    display: flex;
+    max-width: 200px; 
+    height: 20  0px;
+    flex-wrap: flex;
+
+}
+
 .container{
     border-radius: 5px;
     box-shadow: 1px 1px 3px 3px black;
     background-color: white;
     padding: 40px 40px; 
-    max-width: 400px;
+    max-width: 200px;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
-    margin-top: 5px; 
     margin-bottom: 10px;
-    flex-wrap: wrap;
 }
-
-
-img{
+.wallpaper{
+    margin-left: 10%;
+    height: 350px; 
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px gray;
+    
+}
+.wallpic{
+    height: 100%; 
+    width: 60%; 
+    margin-left: 20%;
+}
+.flex-container{
     display: flex;
-    max-width: 150px; 
-    height: 150px;
-    flex-wrap: flex;
+    flex-wrap: wrap; 
+    margin-top: 1%; 
+    margin-left: 11%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px gray;
+    justify-content: space-between;
+    align-content: center;
+}
+.cartContainer{
+    margin-left: 15%; 
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 3px black;
+    background-color: white;
+    padding: 40px 40px; 
+    max-width: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 10px;
+
 
 }
-
-#storeItemContainer{
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: space-between; 
-
-}
+        

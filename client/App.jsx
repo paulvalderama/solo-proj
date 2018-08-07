@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import StoreItem from './Components/StoreItem.jsx';
 import './style.css';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import Test from './Components/Test.jsx';
+import Cart from './Components/Cart.jsx';
 import Store from './Components/Store.jsx';
+// import Login from "./containers/Login";
 
 //React is a js library used for building user interfaces specifically for single page apps. It's used for handling view layer for web and mobile apps
 //React allows us to create reusable UI components. Allows developers to create large web apps which can change data without reloading the page.
@@ -27,6 +28,7 @@ class App extends Component {
         'https://www.picclickimg.com/d/l400/pict/172750808993_/Kevin-Durant-Cupcake-Mens-T-shirt-OKC-KD-Golden.jpg',
         'https://ih1.redbubble.net/image.575181809.8735/ra%2Clongsleeve%2Cx925%2Cfafafa%3Aca443f4786%2Cfront-c%2C210%2C180%2C210%2C230-bg%2Cf8f8f8.lite-1.jpg',
         'https://i1.wp.com/theknickswall.com/wp-content/uploads/2017/10/Screen-Shot-2017-10-23-at-12.31.04-AM.png?fit=563%2C558&ssl=1']
+        
     };
   }
 
@@ -38,14 +40,14 @@ class App extends Component {
         <div>
           <h1 className= 'header'>
           {/* creating links, that link to components(test/'/') rewriting a section of the page vs loading entire new pages for the server */}
-          <div className='links' >
-            <Link to="/Test">
-              <div className = 'links'>
+          <div className='cart' >
+            <Link to="/cart">
+              <div className = 'cart'>
                 Cart
           </div>
             </Link>
             <Link to="/">
-              <div className='gt' >
+              <div className='home' >
                 Home
           </div>
             </Link>
@@ -53,9 +55,10 @@ class App extends Component {
           </h1>
           {/* switch component to render only the first route that matches the location ('/', '/Test') */}
           <Switch>
+              {/* on root path, we render Store */}
             <Route exact path='/' component={Store} />
-            <Route exact path='/Test' component={Test} />
-
+            <Route exact path='/cart' component={Cart} />
+            
           </Switch>
         </div>
       </Router>
